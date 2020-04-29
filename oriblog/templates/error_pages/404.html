@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+<!-- Start Content  -->
+{% block content %}
+<div class="jumbotron">
+  <div class="container header-container">
+    <div class="row">
+      <div class="col-sm header-text">
+        <h1 class="animated fadeInDown delay-1s">404</h1>
+        <h2 class="animated fadeIn">RUH ROH!</h2>
+        <p>Looks like you've lost your way!</p>
+        <p>The treats are in the other direction</p>
+        <a href="{{ url_for('core.index') }}"class="btn btn-primary">Go Home</a>
+      </div>
+      <div class="col-sm header-img">
+        <img class="animated fadeIn delay-1s" src="{{ url_for('static', filename='imgs/' + 'dog.png') }}" alt="green origami fox">
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+

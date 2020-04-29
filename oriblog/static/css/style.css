@@ -1,0 +1,82 @@
+body {
+    background-color: #f1f3f4;
+    font-family: "Montserrat", sans-serif;
+}
+ul li a {
+    font-size: 1.2em;;
+    color: #333;
+    border: none;
+    text-decoration: none!important;
+    border: none!important;
+    outline: none!important;
+}
+.jumbotron {
+    background-color: #f1f3f4;
+}
+.btn-primary {
+    background-color: #00A3E0;
+    border: none;
+}
+.btn-primary:hover {
+    background-color: rgb(28, 172, 224);
+}
+.btn-info {
+    background-color: #62af60;
+    border: none;
+}
+.btn-info:hover {
+    background-color: #72cc6f;
+    opacity: 0.8;
+}
+.btn-danger {
+    background-color:#EE4266;
+}
+.jumbotron .header-container .row .col-sm-6{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+.header-text-main h1 {
+    font-size: 2.2em;
+    line-height: 2em;
+    margin-left: 4em;
+    padding-bottom: 2em;
+    padding-top: 5em;
+}
+.header-img {
+    width: 400px;
+    height: 400px;
+}
+.header-img img {
+    height:100%
+}
+.form-group {
+    margin-bottom:10px;
+}
+.user-img {
+    height: 100px;
+}
+.card-title {
+    color: #333;
+}
+.card-body .author {
+    color: #00A3E0;
+}
+
+@media (max-width: 480px) {
+    .header-text-main h1{
+        width: 300px;
+        margin-left: 0;
+        padding-bottom: 0;
+        padding-top: 1em;
+        text-align: center;
+    }
+    .header-img {
+        height: 200px;
+        text-align: center;
+    }
+    .nav-link a {
+        font-size: 1em;
+    }
+
+}

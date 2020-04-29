@@ -1,0 +1,22 @@
+{% extends "base.html" %} {% block content %}
+<div class="jumbotron">
+  <div class="container header-container">
+    <div class="row">
+      <div class="col-sm-6 header-text">
+        <h1 class="animated fadeInDown">About Us</h1>
+        <p class="animated fadeIn delay-1s">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero magni magnam
+          repudiandae labore praesentium iusto maiores earum. Voluptatum distinctio
+          harum tempore nihil nemo dolores hic consectetur. Vitae aliquid explicabo
+          possimus, cupiditate iusto minima illum laborum quidem, odio vel nobis
+          perspiciatis suscipit praesentium maxime voluptatum? Ratione incidunt eum
+          corrupti molestiae fuga!
+        </p>
+      </div>
+      <div class="col-sm-6 header-img">
+        <img class="animated fadeIn delay-1s" src="{{ url_for('static', filename='imgs/' + 'penguin.png') }}" alt="purple origami penguin">
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

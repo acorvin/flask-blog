@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+<br>
+<div class="jumbotron">
+  <div align='center'>
+    <h1 class="animated fadeIn">Welcome {{ current_user.username }}!</h1>
+    <img class="user-img animated fadeIn delay-1s" align='center' src="{{ url_for('static', filename='imgs/' + current_user.profile_image) }}">
+    <p class="user-img animated fadeInUp">{{ current_user.email }}</p>
+  </div>
+</div>
+<div class="container">
+  <form class="form-group" method="POST">
+     {{ form.hidden_tag() }}
+    <h2 class="animated fadeInLeft delay-1s">Create and publish your post.</h2>
+    <p class="animated fadeInLeft delay-1s">All user posts are displayed on the home page.</p>
+     <div class="form-group animated fadeInLeft delay-1s">
+     {{ form.title.label(class="form-control-label") }}
+     {{ form.title(class="form-control form-control-lg ") }}
+     </div>
+     <div class="form-group animated fadeInLeft delay-1s">
+     {{ form.text.label(class="form-control-label") }}
+     {{ form.text(class="form-control form-control-lg") }}
+     </div>
+     <div class="form-group animated fadeIn delay-2s">
+         {{ form.submit(class="btn btn-outline-info") }}
+     </div>
+  </form>
+</div>
+{% endblock %}

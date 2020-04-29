@@ -1,0 +1,29 @@
+{% extends "base.html" %} {% block content%}
+<div class="jumbotron">
+  <div class="container header-container">
+    <div class="row">
+      <div class="col-sm-6 header-text">
+        <h1 class="animated fadeIn">Sign In</h1>
+        <form method="POST">
+          <div class="container" align="left">
+          {{form.hidden_tag()}}
+          <!--  -->
+          {{form.email.label(class="animated fadeIn")}}
+          <br />
+          {{form.email(class='form-group animated fadeIn')}} 
+          <br />
+          {{form.password.label(class="animated fadeIn")}}
+          <br />
+          {{form.password(class='form-group animated fadeIn')}} <br />
+          <br />
+          {{form.submit(class='btn btn-info animated fadeIn delay-1s')}}
+        </div>
+        </form>
+      </div>
+      <div class="col-sm-6 header-img">
+        <img class="animated fadeIn delay-1s" src="{{ url_for('static', filename='imgs/' + 'fox.png') }}" alt="green origami fox">
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

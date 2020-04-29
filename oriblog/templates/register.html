@@ -1,0 +1,40 @@
+{% extends "base.html" %} {% block content%}
+<div class="jumbotron">
+  <div class="container header-container">
+    <div class="row">
+      <div class="col-sm-6 header-text">
+        <h1 class="title animated fadeInDown">Sign up today!</h1>
+        <p class="title animated fadeIn delay-1s">Receive full access to post your articles.</p>
+        <br />
+        <form action="" method="POST">
+          <div class="container" align="left">
+          {{form.hidden_tag()}}
+          <!--  -->
+          {{form.email.label(class='form-group animated fadeInLeft')}}
+          <br />
+          {{form.email(class='form-group animated fadeInLeft')}}
+          <br />
+          {{form.username.label(class='form-group animated fadeInLeft')}}
+          <br />
+          {{form.username(class='form-group animated fadeInLeft')}}
+          <br />
+          {{form.password.label(class='form-group animated fadeInLeft')}}
+          <br />
+          {{form.password(class='form-group animated fadeInLeft')}}
+          <br />
+          {{form.password_confirm.label(class='form-group animated fadeInLeft')}}
+          <br />
+          {{form.password_confirm(class='form-group animated fadeInLeft')}}
+          <br />
+          <br />
+          {{form.submit(class='btn btn-primary animated fadeIn delay-1s')}}
+          </div>
+        </form>
+      </div>
+      <div class="col-sm-6 header-img">
+        <img class="animated fadeIn delay-1s" src="{{ url_for('static', filename='imgs/' + 'heart.png') }}" alt="blue origami heart">
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
