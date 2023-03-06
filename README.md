@@ -17,6 +17,7 @@ This is a Python Flask web application that allows users to:
 
 - Python
 - Flask
+- SQLite
 - Animate CSS
 
 ## Author
